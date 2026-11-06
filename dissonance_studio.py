@@ -11,7 +11,7 @@ sensory-dissonance model, built with PySide6 + pyqtgraph + OpenGL and Numba.
 * animated controls, view and theme transitions, toasts and a themed title bar
 
 Requirements: numpy, sounddevice, PySide6, pyqtgraph, PyOpenGL, numba, qtawesome
-Run:          python dissonance_v1.2.py
+Run:          python dissonance_studio.py
 """
 
 from __future__ import annotations
