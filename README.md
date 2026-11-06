@@ -4,7 +4,7 @@ An interactive app for deriving consonant intervals and chords from sound spectr
 
 Given any sound spectrum (set of partials), Dissonance Studio computes which intervals and triads sound most consonant—and the results depend entirely on the timbre. Harmonic timbres produce the familiar Western intervals; inharmonic timbres (bells, metallophones) produce entirely different scales. Everything updates live while you edit, and every point on every plot can be heard.
 
-The main version is **`dissonance_v1.2.py`**.
+The main version is **`dissonance_studio.py`**.
 
 ---
 
@@ -179,7 +179,7 @@ Requires Python 3.12 (64-bit) and a graphics driver with OpenGL for the 3D view.
 
 ```bash
 pip install -r requirements.txt
-python dissonance_v1.2.py
+python dissonance_studio.py
 ```
 
 The first run compiles the Numba kernels and caches them in `__pycache__`; later runs start in about a second. Without Numba the app falls back to plain NumPy, which is much slower.
@@ -202,8 +202,7 @@ The repository keeps the earlier versions for reference:
 
 | File | Description |
 |------|-------------|
-| `dissonance_v1.2.py` | **The current version** |
-| `dissonance_v1.0.py` | First release (some features missing) |
+| `dissonance_studio.py` | **The main version** |
 | `dissonance_calculation.py` | Original calculation script with matplotlib plots |
 | `dissonance_prototype.py` | First prototype with a basic UI |
 
